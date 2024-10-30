@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My To-Do List</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="app.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <h1>📝 My To-Do List</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tasks.html">Tasks</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>📝 My Elegant To-Do List</h1>
+    <p>Stay organized and productive!</p>
+  </header>
 
-    <main>
-        <section class="welcome">
-            <h2>Stay Organized, Stay Productive!</h2>
-            <p>Create tasks, track progress, and achieve your goals efficiently.</p>
-            <a href="tasks.html" class="btn">Start Your Task List</a>
-        </section>
-    </main>
+  <main>
+    <div class="todo-container">
+      <input id="todo-input" type="text" placeholder="Add a new task..." />
+      <button id="add-btn">➕ Add Task</button>
+      <ul id="todo-list"></ul>
+    </div>
+  </main>
 
-    <footer>
-        <p>&copy; 2024 My To-Do List. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>✨ Crafted with care by <a href="https://xiaoyuguo6.github.io" target="_blank">Profile</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
