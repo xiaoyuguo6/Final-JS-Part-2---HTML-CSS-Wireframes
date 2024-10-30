@@ -18,13 +18,6 @@ header {
     margin-top: 20px;
 }
 
-.theme-buttons button {
-    margin: 5px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
 main {
     width: 80%;
     max-width: 400px;
@@ -33,19 +26,20 @@ main {
 
 form {
     display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
 }
 
 input {
-    flex-grow: 1;
+    margin: 5px 0;
     padding: 10px;
-    margin-right: 5px;
     border-radius: 5px;
 }
 
 button {
     padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 ul {
@@ -57,10 +51,10 @@ li {
     background-color: #ffffff;
     margin-top: 10px;
     padding: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
 }
 
 footer {
@@ -71,5 +65,3 @@ footer {
     text-align: center;
     width: 100%;
 }
-
-
