@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elegant To-Do List</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish To-Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>📝 My Elegant To-Do List</h1>
-    <p>Stay organized and productive!</p>
-  </header>
+    <header>
+        <h1>🎯 My Task Manager</h1>
+        <div class="theme-buttons">
+            <button id="standard">Standard</button>
+            <button id="light">Light</button>
+            <button id="dark">Dark</button>
+        </div>
+    </header>
 
-  <main>
-    <div class="todo-container">
-      <input id="todo-input" type="text" placeholder="Add a new task..." />
-      <button id="add-btn">➕ Add Task</button>
-      <ul id="todo-list"></ul>
-    </div>
-  </main>
+    <main>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter your task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="task-list"></ul>
+    </main>
 
-  <footer>
-    <p>✨ Crafted with care by <a href="https://xiaoyuguo6.github.io" target="_blank">Profile</a></p>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>
+        <p>Check out my <a href="https://xiaoyuguo6.github.io" target="_blank">Profile</a>!</p>
+    </footer>
 </body>
 </html>
