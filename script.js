@@ -1,30 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
     const taskForm = document.getElementById('task-form');
+    const dateInput = document.getElementById('date-input');
     const taskInput = document.getElementById('task-input');
     const taskList = document.getElementById('task-list');
-    const themeButtons = document.querySelectorAll('.theme-buttons button');
 
-    themeButtons.forEach(button => button.addEventListener('click', changeTheme));
-    taskForm.addEventListener('submit', addTask);
+    taskForm.addEventListener('submit', addEntry);
 
-    function addTask(event) {
+    function addEntry(event) {
         event.preventDefault();
-        const taskText = taskInput.value.trim();
-        if (taskText) {
-            const taskItem = document.createElement('li');
-            taskItem.textContent = taskText;
+        const date = dateInput.value;
+        const task = taskInput.value.trim();
+
+        if (date && task) {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${date}: ${task}`;
 
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Delete';
-            deleteButton.addEventListener('click', () => taskItem.remove());
+            deleteButton.addEventListener('click', () => listItem.remove());
 
-            taskItem.appendChild(deleteButton);
-            taskList.appendChild(taskItem);
+            listItem.appendChild(deleteButton);
+            taskList.appendChild(listItem);
+
+            dateInput.value = '';
             taskInput.value = '';
         }
-    }
-
-    function changeTheme(event) {
-        document.body.className = event.target.id;
     }
 });
