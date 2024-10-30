@@ -1,73 +1,75 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(to right, #4facfe, #00f2fe);
-  font-family: 'Arial', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
 header {
-  text-align: center;
-  padding: 20px;
-  color: white;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.todo-container {
-  margin: auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 80%;
+.theme-buttons button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 10px;
 }
 
 input {
-  width: 70%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-right: 10px;
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
 }
 
 button {
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 ul {
-  list-style-type: none;
-  margin-top: 20px;
+    list-style: none;
+    padding: 0;
 }
 
 li {
-  background-color: #f1f1f1;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
 }
 
 footer {
-  text-align: center;
-  margin-top: auto;
-  padding: 10px;
-  background-color: #333;
-  color: white;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    width: 100%;
 }
+
 
