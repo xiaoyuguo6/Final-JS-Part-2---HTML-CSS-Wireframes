@@ -3,25 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish To-Do List</title>
+    <title>Daily Planner</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>🎯 My Task Manager</h1>
-        <div class="theme-buttons">
-            <button id="standard">Standard</button>
-            <button id="light">Light</button>
-            <button id="dark">Dark</button>
-        </div>
+        <h1>📅 Daily Planner</h1>
     </header>
 
     <main>
         <form id="task-form">
-            <input type="text" id="task-input" placeholder="Enter your task" required>
-            <button type="submit">Add Task</button>
+            <input type="date" id="date-input" required>
+            <input type="text" id="task-input" placeholder="What's your plan?" required>
+            <button type="submit">Add Entry</button>
         </form>
         <ul id="task-list"></ul>
     </main>
@@ -31,3 +27,4 @@
     </footer>
 </body>
 </html>
+
